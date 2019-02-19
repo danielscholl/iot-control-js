@@ -1,0 +1,18 @@
+{
+  "name": "iot-control-nodejs",
+  "version": "1.0.0",
+  "description": "Simple Cloud to Device Method",
+  "main": "index.js",
+  "scripts": {
+    "start": "HUB_CONNECTION_STRING=$(az iot hub show-connection-string --hub-name $HUB -otsv) ./set-interval.js",
+    "clean": "rm -rf node_modules"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "azure-iothub": "^1.9.2",
+    "bunyan": "^1.8.12",
+    "bunyan-format": "^0.2.1"
+  },
+  "devDependencies": {}
+}
