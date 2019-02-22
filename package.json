@@ -1,10 +1,10 @@
 {
-  "name": "iot-control-nodejs",
+  "name": "iot-control-js",
   "version": "1.0.0",
   "description": "Simple Cloud to Device Method",
-  "main": "index.js",
+  "main": "setInterval.js",
   "scripts": {
-    "start": "HUB_CONNECTION_STRING=$(az iot hub show-connection-string --hub-name $HUB -otsv) ./set-interval.js",
+    "start": "HUB_CONNECTION_STRING=$(az iot hub show-connection-string --hub-name $HUB -otsv) ./setInterval.js",
     "clean": "rm -rf node_modules"
   },
   "author": "",
