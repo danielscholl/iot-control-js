@@ -6,7 +6,7 @@ const bunyan = require('bunyan');
 const bformat = require('bunyan-format');
 const formatted = bformat({ outputMode: 'short', color: true });
 const log = bunyan.createLogger({
-  name: 'SimpleDevice',
+  name: 'SimpleControl',
   level: process.env.LOG_LEVEL || 'info',
   stream: formatted,
   serializers: bunyan.stdSerializers
